@@ -7,12 +7,14 @@ namespace MethodClassAssignment
         static void Main(string[] args)
         {
             MethodClassAssignment math1 = new MethodClassAssignment();
-            /*Console.WriteLine(math1.MathOp(7));
-            Console.WriteLine(math1.MathOp(7.3m));
-            Console.WriteLine(math1.MathOp("7"));*/
 
             math1.MathOp(7, 9);
+
+            Console.WriteLine("After math decimal operation function called. " + math1.MathOp2(7, 9));
+
+            Console.WriteLine("After math operation on string conversion function called. " + math1.MathOp3("7", "9"));
             
         }
     }
+
 }
